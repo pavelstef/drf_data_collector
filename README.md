@@ -2,6 +2,8 @@
 
 Simple Python project: Django(DRF) , JSON output, XLSX output
 
+Superuser: admin\admin
+
 API Information:
 + GET <server_ip:port>/api/v1/docs - Automatically generated API documentation
 
