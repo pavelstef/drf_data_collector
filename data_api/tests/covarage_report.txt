@@ -1,0 +1,29 @@
+coverage run --source=data_api manage.py test data_api
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+......
+----------------------------------------------------------------------
+Ran 6 tests in 0.096s
+
+OK
+Destroying test database for alias 'default'...
+
+ coverage report -m
+Name                                  Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------
+data_api/__init__.py                      0      0   100%
+data_api/admin.py                         3      0   100%
+data_api/apps.py                          4      0   100%
+data_api/forms.py                        13      1    92%   21
+data_api/migrations/0001_initial.py       5      0   100%
+data_api/migrations/__init__.py           0      0   100%
+data_api/models.py                       13      1    92%   26
+data_api/serializers.py                   6      0   100%
+data_api/tests/__init__.py                0      0   100%
+data_api/tests/test_utils.py             29      0   100%
+data_api/tests/test_views.py             39      0   100%
+data_api/urls.py                          4      0   100%
+data_api/utils.py                        35      7    80%   18-25
+data_api/views.py                        55     18    67%   32-41, 65-66, 91-103
+-------------------------------------------------------------------
+TOTAL                                   206     27    87%
